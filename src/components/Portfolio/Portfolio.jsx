@@ -1,16 +1,31 @@
-import React from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Col, Container, Image, Row, Spinner } from "react-bootstrap";
 import chossy_foddy from "../../assets/images/chossy_foddy.png";
 import arche from "../../assets/images/arche.png";
 import appon from "../../assets/images/appon.png";
-import hunt from "../../assets/images/hunt.png";
+import hunt from "../../assets/images/hunt.jpg";
 import lamda from "../../assets/images/lamda.png";
 import arf from "../../assets/images/arf.png";
 import panda_commerce from "../../assets/images/panda_commerce.png";
 
 const Portfolio = () => {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>
+      setLoading(false), 1000
+    )
+  },[])
   return (
-    <Container>
+    <>{
+      loading? (<div className="loader_div">
+        <Spinner animation="grow" variant="secondary">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      </div>)
+      : (
+        <Container>
       <div className="portfolio_part">
         <Row className="portfolio_header_row">
           <Col xs={6}>
@@ -75,6 +90,12 @@ const Portfolio = () => {
         </Row>
       </div>
     </Container>
+      )
+    }
+    
+    
+    </>
+    
   );
 };
 

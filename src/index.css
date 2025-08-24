@@ -73,6 +73,12 @@ body{
 .btn_design a:hover::after{
 width: 196px;
 }
+.loader_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 
 /*================================
@@ -92,7 +98,7 @@ width: 196px;
 .sidebarsection{
     position: fixed;
     top: 0;
-    left: 0;
+    left: -15px;
     height: 100vh;
     width: 70px;
     
@@ -106,30 +112,62 @@ color: var(--white);
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    /* align-items: center; */
     height: 100vh;
     width: 110px;
 }
-.side_item{
-    color: var(--white);
+.side_item {
+    position: relative; /* Add this to contain the absolutely positioned label */
+}
+
+
+.side_link{
+    position: relative;
+    display: flex;
+    background: var(--gray);
     height: 60px;
     width: 60px;
-    background: var(--gray);
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-    transition: all linear .3s;
-}
-.side_item:hover{
-    background: var(--green);
-    width: 80px;
-    border-radius: 50px;
-}
-.side_link{
+    transition: all 0.3s ease;
     color: var(--white);
+    text-decoration: none;
+    overflow: hidden;
+}
+.side_link svg{
+    width: 20px;  /* Adjust this size */
+    height: 20px; /* Adjust this size */
+    flex-shrink: 0; 
+}
+.side_link:hover{
+    background: var(--green);
+    padding: 0 20px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center; /* Keep centered, let gap handle spacing */
+    width: max-content; /* Adjusts to content size */
+    gap: 10px; /* Space between icon and text */
+    min-width: 60px; /* Maintains minimum size */
+}
+.side_link:hover .hover_label{
+    display: block;
+}
+.hover_label{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: var(--white);
+    display: none;
 
+}
+.side_item:hover .hover_label{
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -257,7 +295,7 @@ padding-left: 60px;
     color: var(--white);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 26px;
     text-transform: uppercase;
     padding-bottom: 35px;
 }
@@ -497,7 +535,7 @@ padding-left: 60px;
 .port_img img{
     display: block;
   height: auto;
-  transition: transform 0.9s ease;
+  transition: transform 1.3s ease;
   width: 100%; 
 }
 
@@ -512,9 +550,157 @@ padding-left: 60px;
 
 
 /*================================
-        About Part Start 
+        Contact Part Start 
 ================================ */
 
 /*================================
-        About Part End 
+        Contact Part End 
+================================ */
+
+
+/*================================
+        Contact Part Start 
+================================ */
+.contact_header{
+    text-align: center;
+    position: relative;
+}
+.contact_part{
+    padding: 90px 0;
+}
+.contact_header_row{
+    display: 'flex';
+    justify-content: center;
+    
+}
+.contact_header h1{
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+.contact_header h1 span{
+    color: var(--green);
+}
+.contact_header h2{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: var(--gray);
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 115px;
+    text-transform: uppercase;
+    z-index: -999;
+
+}
+.contact_row{
+    padding: 90px 0;
+}
+.contact_left h4{
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.contact_left p{
+    color: var(--white);
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.contact_info{
+    display: flex;
+    padding-bottom: 15px;
+}
+.contact_info h5{
+    color: var(--white);
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 14px;
+}
+.contact_info h6{
+    color: var(--white);
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 14px;
+}
+.contact_info_text{
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.contact_icon_row{
+    display: flex;
+    margin-top: 10px;
+    gap: 12px;
+}
+.contact_icon{
+    height: 44px;
+    width: 44px;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+.contact_icon:hover{
+    background: var(--green);
+}
+
+.form_style{
+    background: var(--gray);
+}
+.custom_input{
+    padding: 15px 25px !important;
+    border-radius: 50px !important;
+    border: none !important;
+    background: var(--gray) !important;
+}
+.custom_input::placeholder{
+    color: var(--gray1)!important;
+    opacity: 1; 
+    font-family: "Poppins", sans-serif;
+}
+.custom_input:focus{
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background: var(--gray) !important;
+}
+
+/* Fix the autofill styling */
+.custom_input:-webkit-autofill,
+.custom_input:-webkit-autofill:hover,
+.custom_input:-webkit-autofill:focus,
+.custom_input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px var(--gray) inset !important;
+    -webkit-text-fill-color: var(--gray1) !important;
+    background: var(--gray) !important;
+    border: none !important;
+    outline: none !important;
+    font-family: "Poppins", sans-serif !important;
+}
+
+.custom_input.is-valid,
+.custom_input.is-invalid {
+    border: none !important;
+    box-shadow: none !important;
+    background: var(--gray) !important;
+}
+
+/* Disable autocomplete dropdown styling */
+.custom_input::-webkit-list-button,
+.custom_input::-webkit-calendar-picker-indicator {
+    display: none !important;
+}
+/*================================
+        Contact Part End 
 ================================ */

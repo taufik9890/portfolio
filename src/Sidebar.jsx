@@ -11,19 +11,19 @@ const Sidebar = () => {
       <nav >
         <ul className='sidebar_list'>
           <li className='side_item' >
-            <Link to="/" className='side_link' >< FaHome  size={24}/></Link>
+            <Link to="/" className='side_link' >< FaHome  size={24}/> <span className='hover_label'>Home</span></Link>
           </li>
           <li className='side_item'>
-            <Link to="/about" className='side_link' ><FaUser size={19} /></Link>
+            <Link to="/about" className='side_link' ><FaUser size={16} /><span className='hover_label'>About</span></Link>
           </li>
           <li className='side_item'>
-            <Link to="/portfolio" className='side_link' ><FaToolbox size={19} /></Link>
+            <Link to="/portfolio" className='side_link' ><FaToolbox size={19} /><span className='hover_label'>Portfolio</span></Link>
           </li>
           <li className='side_item'>
-            <Link to="/portfolio" className='side_link' ><MdMiscellaneousServices size={23} /></Link>
+            <Link to="/portfolio" className='side_link' ><MdMiscellaneousServices size={23} /><span className='hover_label'>Blog</span></Link>
           </li>
           <li className='side_item'>
-            <Link to="/portfolio" className='side_link' ><MdMessage size={20} /></Link>
+            <Link to="/contact" className='side_link' ><MdMessage size={20} /><span className='hover_label'>Contact</span></Link>
           </li>
         </ul>
       </nav> 

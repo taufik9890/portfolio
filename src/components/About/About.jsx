@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaDownload } from "react-icons/fa";
 import CountUp from "react-countup";
 import "react-circular-progressbar/dist/styles.css";
 import AnimatedCircularProgressbar from "../AnimatedCircularProgressbar/AnimatedCircularProgressbar";
-import { CgWebsite } from "react-icons/cg";
 import { FaGraduationCap } from "react-icons/fa6";
 import { MdOutlineWorkHistory } from "react-icons/md";
+import { Spinner } from 'react-bootstrap'
 const About = () => {
   const percentage = 60;
+  const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      setTimeout(() => setLoading(false), 1000);
+    }, []);
   return (
-    <div>
+    <>
+      {
+              loading? (
+                <div className="loader_div">
+                <Spinner animation="grow" variant="secondary">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+              </div>
+              ):(
       <Container>
         <div className="about_part">
           <Row className="about_header_row">
@@ -374,7 +387,11 @@ const About = () => {
           </Row>
         </div>
       </Container>
-    </div>
+      )
+    }
+
+</>
+    
   );
 };
 
