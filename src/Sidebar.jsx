@@ -20,7 +20,7 @@ const Sidebar = () => {
             <Link to="/portfolio" className='side_link' ><FaToolbox size={19} /><span className='hover_label'>Portfolio</span></Link>
           </li>
           <li className='side_item'>
-            <Link to="/portfolio" className='side_link' ><MdMiscellaneousServices size={23} /><span className='hover_label'>Blog</span></Link>
+            <Link to="/blogs" className='side_link' ><MdMiscellaneousServices size={23} /><span className='hover_label'>Blog</span></Link>
           </li>
           <li className='side_item'>
             <Link to="/contact" className='side_link' ><MdMessage size={20} /><span className='hover_label'>Contact</span></Link>

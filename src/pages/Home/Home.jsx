@@ -4,8 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaArrowRight } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { Spinner } from "react-bootstrap";
-
+import { Image, Spinner } from "react-bootstrap";
+import pro_pic from "../../assets/images/pro_pic.jpg"
 const Home = () => {
   const navigate = useNavigate();
 
@@ -47,7 +47,10 @@ const Home = () => {
                 </div>
               </div></Col>
             <Col xs={6}>
-              
+            <div className="home_propic">
+
+              <Image src={pro_pic}/>
+            </div>
             </Col>
           </Row>
         </Container>

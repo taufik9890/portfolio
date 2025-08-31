@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Image, Row, Spinner } from "react-bootstrap";
+import chitchat from "../../assets/images/chitchat.jpg";
+import natto from "../../assets/images/natto.png";
 import chossy_foddy from "../../assets/images/chossy_foddy.png";
 import arche from "../../assets/images/arche.png";
 import appon from "../../assets/images/appon.png";
@@ -38,6 +40,20 @@ const Portfolio = () => {
           </Col>
         </Row>
         <Row className="port_img_row">
+          <Col xs={4}>
+            <div className="port_img">
+              <a href="https://chitchatfinal.vercel.app/" rel="noopener noreferrer" target="_blank">
+                <Image alt="chossy_foddy" loading="lazy" src={chitchat} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={4}>
+            <div className="port_img">
+              <a href="https://nattofinal.vercel.app/" rel="noopener noreferrer" target="_blank">
+                <Image alt="chossy_foddy" loading="lazy" src={natto} />
+              </a>
+            </div>
+          </Col>
           <Col xs={4}>
             <div className="port_img">
               <a href="https://taufik9890.github.io/chossy-foddy/index.html" rel="noopener noreferrer" target="_blank">
