@@ -333,7 +333,7 @@ const About = () => {
                   <div className="education_texts">
                     <h5>June 2016 - June 2020</h5>
                     <h4>Computer Science & Engineering - <span>Uttara University</span></h4>
-                    <p>I was mainly working as a Front End Web Developer remotely. I focused on Bootstrap, Html 5, Css and jQuery while being in this company</p>
+                    <p>I have completed my graduation from here. Learned a lot about programming during this 4 year</p>
                   </div>
                 </div>
               </div>
@@ -361,9 +361,9 @@ const About = () => {
                     <FaGraduationCap color="#fff" />
                   </div>
                   <div className="education_texts">
-                    <h5>Nov 2021 - July 2023</h5>
+                    <h5>July 2020 - Feb 2021</h5>
                     <h4>Responsive Web Design - <span>Creative IT</span></h4>
-                    <p>I was mainly working as a Front End Web Developer remotely. I focused on Bootstrap, Html 5, Css and jQuery while being in this company</p>
+                    <p>I learned mostly about Html5, CSS3, Bootstrap 5, jQuery, and little bit of Javascript</p>
                   </div>
                 </div>
               </div>
@@ -376,8 +376,8 @@ const About = () => {
                   </div>
                   <div className="education_texts">
                     <h5>Nov 2023 - Feb 2025</h5>
-                    <h4>Web Developer - <span>CT Health LTD(Badass Foundation)</span></h4>
-                    <p>I was mainly working as a Front End Web Developer remotely. I focused on Bootstrap, Html 5, Css and jQuery while being in this company</p>
+                    <h4>Web Developer - <span>CT Health LTD(Birdem, Badass Foundation)</span></h4>
+                    <p>I was innitially recruited for developing React Native Apps and React Js web application for Front End Developement. I solely developed these apps with my own experience in React Js and React Native. Later I was responsible for maintaining the Back-End and Databases of several websites from the company.</p>
                   </div>
                 </div>
               </div>
@@ -389,9 +389,9 @@ const About = () => {
                     <FaGraduationCap color="#fff" />
                   </div>
                   <div className="education_texts">
-                    <h5>Nov 2021 - July 2023</h5>
+                    <h5>Aug 2022 - Dec 2024</h5>
                     <h4>Mern Stack Developement - <span>Creative It</span></h4>
-                    <p>I was mainly working as a Front End Web Developer remotely. I focused on Bootstrap, Html 5, Css and jQuery while being in this company</p>
+                    <p>This has been a long online course for me learning about Basic web designing with Bootstrap, Tailwind, Material UI, then We learned about React Js, Node Js, Express Js, Mongo DB, Redux, React Native and many more. With major projects like chatting application, Full-stack eccomerce(still on production) and Full-stack social media app(still on production)</p>
                   </div>
                 </div>
               </div>

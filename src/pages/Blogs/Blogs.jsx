@@ -69,7 +69,7 @@ const Blogs = () => {
                     <h4>Apps I have developed and maintained while working for Ct Health</h4>
                     <Card.Text>
                       <p>
-                       I was innitially recruited for developing React Native Apps. I solely developed these apps with my own experience in React Js</p>
+                       I was innitially recruited for developing React Native Apps and React Js web application. I solely developed these apps with my own experience in React Js and React Native</p>
                     </Card.Text>
                   </Card.Body>
                 </Card>
