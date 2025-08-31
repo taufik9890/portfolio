@@ -291,6 +291,12 @@ const About = () => {
             </Col>
             <Col xs={2}>
               <AnimatedCircularProgressbar
+                targetPercentage={60}
+                barText={"Vercel"}
+              />
+            </Col>
+            <Col xs={2}>
+              <AnimatedCircularProgressbar
                 targetPercentage={50}
                 barText={"Unfuddle"}
               />
