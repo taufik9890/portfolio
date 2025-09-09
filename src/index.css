@@ -95,14 +95,14 @@ width: 196px;
 /* .mainsection{
     padding-left: 70px;
 } */
-.sidebarsection{
+/* .sidebarsection{
     position: fixed;
     top: 0;
     left: -15px;
     height: 100vh;
     width: 70px;
-    
-}
+    z-index: 999;
+} */
 .sidebar{
 background: '#333';
 color: var(--white);
@@ -145,10 +145,10 @@ color: var(--white);
     padding: 0 20px;
     border-radius: 50px;
     align-items: center;
-    justify-content: center; /* Keep centered, let gap handle spacing */
-    width: max-content; /* Adjusts to content size */
-    gap: 10px; /* Space between icon and text */
-    min-width: 60px; /* Maintains minimum size */
+    justify-content: center; 
+    width: max-content; 
+    gap: 10px; 
+    min-width: 60px; 
 }
 .side_link:hover .hover_label{
     display: block;
@@ -194,7 +194,7 @@ color: var(--white);
     font-weight: 800;
     padding-left: 70px;
 }
-.home_propic{
+ .home_propic{
     padding-top: 8px;
 }
 .header h1::after{
@@ -223,6 +223,7 @@ color: var(--white);
     font-weight: 500;
     padding: 20px 0;
 }
+
 
 
 /*================================
@@ -292,7 +293,7 @@ color: var(--white);
 padding-left: 60px;
 }
 .about_info_left{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .about_left h4{
     color: var(--white);
@@ -571,6 +572,7 @@ padding-left: 60px;
 .blog_card{
     width: 100%;
     background: var(--gray) !important;
+    overflow: hidden;
 }
 
 .blog_header h1{
@@ -758,6 +760,9 @@ padding-left: 60px;
 .contact_part{
     padding: 90px 0;
 }
+.contact_row .btn_design a:hover::after{
+    width: 167px;
+}
 .contact_header_row{
     display: 'flex';
     justify-content: center;
@@ -853,6 +858,7 @@ padding-left: 60px;
     border-radius: 50px !important;
     border: none !important;
     background: var(--gray) !important;
+    margin-bottom: 20px;
 }
 .custom_input::placeholder{
     color: var(--gray1)!important;
@@ -891,6 +897,7 @@ padding-left: 60px;
 .custom_input::-webkit-calendar-picker-indicator {
     display: none !important;
 }
+
 /*================================
         Contact Part End 
 ================================ */

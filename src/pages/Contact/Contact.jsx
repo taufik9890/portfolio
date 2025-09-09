@@ -13,6 +13,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import * as formik from "formik";
 import * as yup from "yup";
+import { SiMinutemailer } from "react-icons/si";
 
 const Contact = () => {
   const [loading, setLoading] = useState(true);
@@ -41,7 +42,7 @@ const Contact = () => {
         <Container>
           <div className="contact_part">
             <Row className="contact_header_row">
-              <Col xs={7}>
+              <Col xs={12}>
                 <div className="contact_header">
                   <h1>
                     Get in <span>touch</span>
@@ -51,7 +52,7 @@ const Contact = () => {
               </Col>
             </Row>
             <Row className="contact_row">
-              <Col xs={4}>
+              <Col xs={12} lg={{span:5, offset:1}}>
                 <div className="contact_left">
                   <h4>express your views !</h4>
                   <p>
@@ -80,7 +81,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <FaGithub size={18} color="fff" />
+                      <FaGithub size={18} color="#fff" />
                     </a>
                     <a
                       href="https://www.facebook.com/taufik.mahbub.1/"
@@ -88,7 +89,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <FaFacebookF size={18} color="fff" />
+                      <FaFacebookF size={18} color="#fff" />
                     </a>
                     <a
                       href="https://www.linkedin.com/in/taufik-mahbub-086a11205/"
@@ -96,7 +97,7 @@ const Contact = () => {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      <FaLinkedin size={18} color="fff" />
+                      <FaLinkedin size={18} color="#fff" />
                     </a>
                     <a
                       href="https://x.com/taufik9890"
@@ -104,19 +105,19 @@ const Contact = () => {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      <FaXTwitter size={18} color="fff" />
+                      <FaXTwitter size={18} color="#fff" />
                     </a>
                   </div>
                 </div>
               </Col>
-              <Col xs={8}>
+              <Col xs={12} lg={{span:6}}>
                 <Formik
                   validationSchema={schema}
                   onSubmit={console.log}
                   initialValues={{
                     fullname: "",
                     subject: "",
-                    email: ""
+                    email: "",
                   }}
                 >
                   {({
@@ -127,13 +128,11 @@ const Contact = () => {
                     errors,
                   }) => (
                     <Form noValidate onSubmit={handleSubmit}>
-                      <Row className="mb-3">
-                        
+                      <Row className="form_part mb-3">
                         <Form.Group
                           as={Col}
                           md="4"
                           controlId="validationFormik01"
-                          
                         >
                           <Form.Control
                             type="text"
@@ -144,22 +143,27 @@ const Contact = () => {
                             onChange={handleChange}
                             isInvalid={!!errors.fullname}
                             isValid={touched.fullname && !errors.fullname}
-                            style={{background: '#2B2A2A', border: 'none', color: '#949392',  boxShadow: "none",fontFamily: '"Poppins", sans-serif', padding: '5px 10px' }}
-                            
+                            style={{
+                              background: "#2B2A2A",
+                              border: "none",
+                              color: "#949392",
+                              boxShadow: "none",
+                              fontFamily: '"Poppins", sans-serif',
+                              padding: "5px 10px",
+                            }}
                           />
 
                           <Form.Control.Feedback>
                             Looks good!
                           </Form.Control.Feedback>
                           <Form.Control.Feedback type="invalid">
-                              {errors.fullname}
-                            </Form.Control.Feedback>
+                            {errors.fullname}
+                          </Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group
                           as={Col}
                           md="4"
                           controlId="validationFormik02"
-                          
                         >
                           <Form.Control
                             type="email"
@@ -170,22 +174,27 @@ const Contact = () => {
                             onChange={handleChange}
                             isInvalid={!!errors.email}
                             isValid={touched.email && !errors.email}
-                            style={{background: '#2B2A2A', border: 'none', color: '#949392',  boxShadow: "none",fontFamily: '"Poppins", sans-serif', padding: '5px 10px', }}
-                            
+                            style={{
+                              background: "#2B2A2A",
+                              border: "none",
+                              color: "#949392",
+                              boxShadow: "none",
+                              fontFamily: '"Poppins", sans-serif',
+                              padding: "5px 10px",
+                            }}
                           />
 
                           <Form.Control.Feedback>
                             Looks good!
                           </Form.Control.Feedback>
                           <Form.Control.Feedback type="invalid">
-                              {errors.email}
-                            </Form.Control.Feedback>
+                            {errors.email}
+                          </Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group
                           as={Col}
                           md="4"
                           controlId="validationFormik03"
-                          
                         >
                           <Form.Control
                             type="text"
@@ -196,23 +205,32 @@ const Contact = () => {
                             onChange={handleChange}
                             isInvalid={!!errors.subject}
                             isValid={touched.subject && !errors.subject}
-                            style={{background: '#2B2A2A', border: 'none', color: '#949392',  boxShadow: "none",fontFamily: '"Poppins", sans-serif', padding: '5px 10px', }}
-                            
+                            style={{
+                              background: "#2B2A2A",
+                              border: "none",
+                              color: "#949392",
+                              boxShadow: "none",
+                              fontFamily: '"Poppins", sans-serif',
+                              padding: "5px 10px",
+                            }}
                           />
 
                           <Form.Control.Feedback>
                             Looks good!
                           </Form.Control.Feedback>
                           <Form.Control.Feedback type="invalid">
-                              {errors.subject}
-                            </Form.Control.Feedback>
+                            {errors.subject}
+                          </Form.Control.Feedback>
                         </Form.Group>
-                        
                       </Row>
-                      <Row className="mb-3">
-
-                      </Row>
-                      <Button type="submit">Submit form</Button>
+                      <div className="btn_design">
+                        <a
+                          href="#"
+                        >
+                        Submit form
+                           <SiMinutemailer />
+                        </a>
+                      </div>
                     </Form>
                   )}
                 </Formik>

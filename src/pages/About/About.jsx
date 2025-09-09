@@ -26,7 +26,7 @@ const About = () => {
         <Container>
           <div className="about_part">
             <Row className="about_header_row">
-              <Col xs={6}>
+              <Col xs={12}>
                 <div className="about_header">
                   <h1>
                     About <span>Me</span>
@@ -36,11 +36,11 @@ const About = () => {
               </Col>
             </Row>
             <Row className="about_info">
-              <Col xs={6}>
+              <Col lg={6} xs={12}>
                 <div className="about_left">
                   <h4>personal infos</h4>
                   <Row>
-                    <Col xs={6}>
+                    <Col xs={6} lg={5}>
                       <div className="about_info_left">
                         <h6>
                           First Name: <span>Taufik</span>
@@ -98,9 +98,9 @@ const About = () => {
                   </Row>
                 </div>
               </Col>
-              <Col xs={6}>
-                <div className="about_info_right">
-                  <div className="info_box">
+              <Col lg={6} xs={12}>
+                <Row className="about_info_right">
+                  <Col xs={6} className="info_box">
                     <CountUp
                       start={0}
                       end={3}
@@ -118,8 +118,8 @@ const About = () => {
                       onStart={() => console.log("Started! 💨")}
                     ></CountUp>
                     <h4>Years of experience</h4>
-                  </div>
-                  <div className="info_box">
+                  </Col>
+                  <Col xs={6} className="info_box">
                     <CountUp
                       start={0}
                       end={30}
@@ -137,8 +137,8 @@ const About = () => {
                       onStart={() => console.log("Started! 💨")}
                     ></CountUp>
                     <h4>Projects</h4>
-                  </div>
-                  <div className="info_box">
+                  </Col>
+                  <Col xs={6} className="info_box">
                     <CountUp
                       start={0}
                       end={10}
@@ -156,11 +156,11 @@ const About = () => {
                       onStart={() => console.log("Started! 💨")}
                     ></CountUp>
                     <h4>Happy Customers</h4>
-                  </div>
-                  <div className="info_box">
+                  </Col>
+                  <Col xs={6} className="info_box">
                     <CountUp
                       start={0}
-                      end={3}
+                      end={22}
                       duration={3}
                       separator=" "
                       decimal=","
@@ -174,9 +174,9 @@ const About = () => {
                       onEnd={() => console.log("Ended! 👏")}
                       onStart={() => console.log("Started! 💨")}
                     ></CountUp>
-                    <h4>Years of experience</h4>
-                  </div>
-                </div>
+                    <h4>Technologies Mastered</h4>
+                  </Col>
+                </Row>
               </Col>
             </Row>
           </div>
@@ -189,133 +189,133 @@ const About = () => {
               </Col>
             </Row>
             <Row className="barRow">
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={85}
                   barText={"React Js"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={55}
                   barText={"Next Js"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={45}
                   barText={"Node Js"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={80}
                   barText={"React Native"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={50}
                   barText={"JavaScript"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={45}
                   barText={"Mongo DB"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={50}
                   barText={"Firebase"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={55}
                   barText={"Sql"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={45}
                   barText={"Redux"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={40}
                   barText={"Ajax"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={95}
                   barText={"React Bootstrap"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={95}
                   barText={"Bootstrap"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={70}
                   barText={"Tailwind"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={60}
                   barText={"Material UI"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={65}
                   barText={"Scss"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={90}
                   barText={"Css"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={95}
                   barText={"Html5"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={70}
                   barText={"GitHub"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={60}
                   barText={"Vercel"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={50}
                   barText={"Unfuddle"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={80}
                   barText={"Figma"}
                 />
               </Col>
-              <Col xs={2}>
+              <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={60}
                   barText={"Adobe Photoshop"}
@@ -332,7 +332,7 @@ const About = () => {
               </Col>
             </Row>
             <Row>
-              <Col xs={6}>
+              <Col xs={12} md={6} lg={{span:5, offset:1}}>
                 <div className="education_main">
                   <div className="education_row">
                     <div className="education_logo">
@@ -352,7 +352,7 @@ const About = () => {
                   </div>
                 </div>
               </Col>
-              <Col xs={6}>
+              <Col xs={12} md={6} lg={{span:5, offset:1}}>
                 <div className="education_main">
                   <div className="education_row">
                     <div className="education_logo">
@@ -373,7 +373,7 @@ const About = () => {
                 </div>
               </Col>
 
-              <Col xs={6}>
+              <Col xs={12} md={6} lg={{span:5, offset:1}}>
                 <div className="education_main">
                   <div className="education_row">
                     <div className="education_logo">
@@ -392,7 +392,7 @@ const About = () => {
                   </div>
                 </div>
               </Col>
-              <Col xs={6}>
+              <Col xs={12} md={6} lg={{span:5, offset:1}}>
                 <div className="education_main">
                   <div className="education_row">
                     <div className="education_logo">
@@ -416,7 +416,7 @@ const About = () => {
                   </div>
                 </div>
               </Col>
-              <Col xs={6}>
+              <Col xs={12} md={6} lg={{span:5, offset:1}}>
                 <div className="education_main">
                   <div className="education_row">
                     <div className="education_logo">

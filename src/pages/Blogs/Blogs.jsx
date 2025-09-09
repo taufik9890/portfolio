@@ -26,7 +26,7 @@ const Blogs = () => {
         <Container>
           <div className="blog_part">
             <Row className="blog_header_row">
-              <Col xs={6}>
+              <Col xs={12}>
                 <div className="blog_header">
                   <h1>
                     my <span>blogs</span>
@@ -36,7 +36,7 @@ const Blogs = () => {
               </Col>
             </Row>
             <Row className="blog_img_row">
-              <Col xs={4}>
+              <Col xs={12} md={6} xxl={4}>
                 <Card className="blog_card">
                   <Link to="/blogdetails" className="card_image" >
                     <Card.Img
@@ -55,7 +55,7 @@ const Blogs = () => {
                   </Card.Body>
                 </Card>
               </Col>
-              <Col xs={4}>
+              <Col xs={12} md={6} xxl={4} >
                 <Card className="blog_card">
                   <Link to="/blognative" className="card_image" >
                     <Card.Img

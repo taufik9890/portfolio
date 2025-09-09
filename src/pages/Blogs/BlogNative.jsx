@@ -22,7 +22,7 @@ const BlogNative = () => {
         <Container>
           <div className="blog_part">
             <Row className="blog_header_row">
-              <Col xs={6}>
+              <Col xs={12}>
                 <div className="blog_header">
                   <h1>
                     my <span>blogs</span>
@@ -32,7 +32,7 @@ const BlogNative = () => {
               </Col>
             </Row>
             <Row className="blognative_img_row">
-              <Col xs={8}>
+              <Col xs={12} md={10}>
               <div className="blognative_header">
                 <h3>
                   Apps I have developed and maintained while working for Ct

@@ -22,7 +22,7 @@ const BlogDetails = () => {
         <Container>
           <div className="blog_part">
             <Row className="blog_header_row">
-              <Col xs={6}>
+              <Col xs={12}>
                 <div className="blog_header">
                   <h1>
                     my <span>blogs</span>
@@ -35,7 +35,7 @@ const BlogDetails = () => {
               <div className="blogdet_header">
                 <h3>Websites I have maintained while working for Ct Health</h3>
               </div>
-              <Col xs={4}>
+              <Col xs={12} md={6} lg={4}>
                 <div className="blogdet_img">
                   <a
                     href="https://app.bndr-org.com.bd/login/type/user"
@@ -81,7 +81,7 @@ const BlogDetails = () => {
                   </p>
                 </div>
               </Col>
-              <Col xs={4}>
+              <Col xs={12} md={6} lg={4}>
                 <div className="blogdet_img">
                   <a
                     href="https://www.dlpbadas-bd.org/"
@@ -110,7 +110,7 @@ const BlogDetails = () => {
                   </p>
                 </div>
               </Col>
-              <Col xs={4}>
+              <Col xs={12} md={6} lg={4}>
                 <div className="blogdet_img">
                   <a
                     href="https://ccvd.ibrahimcardiac.org.bd/"

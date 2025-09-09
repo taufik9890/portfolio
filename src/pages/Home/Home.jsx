@@ -5,19 +5,16 @@ import Col from "react-bootstrap/Col";
 import { FaArrowRight } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { Image, Spinner } from "react-bootstrap";
-import pro_pic from "../../assets/images/pro_pic.jpg"
+import pro_pic from "../../assets/images/pro_pic.jpg";
 const Home = () => {
   const navigate = useNavigate();
-
   const gotoAbout = () => {
     navigate("/about");
   };
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
   }, []);
-
   return (
     <>
       {loading ? (
@@ -28,8 +25,9 @@ const Home = () => {
         </div>
       ) : (
         <Container>
-          <Row>
-            <Col xs={6}><div className="header">
+          <Row className="home_part">
+            <Col sm={12} lg={{ span: 5, offset: 1 }}  xxl={6}>
+              <div className="header">
                 <h1>I'm Taufik Mahbub</h1>
                 <h2>Mern Stack Developer</h2>
                 <p>
@@ -45,12 +43,14 @@ const Home = () => {
                     More About Me <FaArrowRight />
                   </a>
                 </div>
-              </div></Col>
-            <Col xs={6}>
-            <div className="home_propic">
-
-              <Image src={pro_pic}/>
-            </div>
+              </div>
+            </Col>
+            <Col sm={12} lg={4} xxl={{ span: 5 }}>
+              <div className="propic_container">
+                <div className="home_propic">
+                  <Image src={pro_pic} />
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
