@@ -39,9 +39,9 @@ const Home = () => {
                   seamless user experiences.
                 </p>
                 <div className="btn_design">
-                  <a className="" onClick={() => gotoAbout()} href="">
+                  <Link  className="" to={'/about'}  href="">
                     More About Me <FaArrowRight />
-                  </a>
+                  </Link> 
                 </div>
               </div>
             </Col>
