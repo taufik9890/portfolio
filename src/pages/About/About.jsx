@@ -246,7 +246,7 @@ const About = () => {
               <Col xs={6} sm={4} md={3} lg={2}>
                 <AnimatedCircularProgressbar
                   targetPercentage={40}
-                  barText={"Ajax"}
+                  barText={"Axios"}
                 />
               </Col>
               <Col xs={6} sm={4} md={3} lg={2}>
@@ -364,9 +364,7 @@ const About = () => {
                         Web Designer - <span>A.R Family LLC</span>
                       </h4>
                       <p>
-                        I was mainly working as a Front End Web Developer
-                        remotely. I focused on Bootstrap, Html 5, Css and jQuery
-                        while being in this company
+                        I was working as a Front End Developer remotely. I worked on some projects using Bootstrap, Html, Css, jQuery and a little bit of javaScript. I provided my own UI as well and been granted by them after that. I’ve always maintain quality in pixel perfection.
                       </p>
                     </div>
                   </div>

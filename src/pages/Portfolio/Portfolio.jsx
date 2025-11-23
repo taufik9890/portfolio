@@ -3,7 +3,13 @@ import { Col, Container, Image, Row, Spinner } from "react-bootstrap";
 import chitchat from "../../assets/images/chitchat.jpg";
 import natto from "../../assets/images/natto.png";
 import chossy_foddy from "../../assets/images/chossy_foddy.png";
+import gymnasium from "../../assets/images/gymnasium.png";
+import jirvana from "../../assets/images/jirvana.png";
+import innovate from "../../assets/images/innovate.png";
 import arche from "../../assets/images/arche.png";
+import qwery from "../../assets/images/qwery.png";
+import ngo from "../../assets/images/ngo.png";
+import agenc from "../../assets/images/agenc.png";
 import appon from "../../assets/images/appon.png";
 import hunt from "../../assets/images/hunt.jpg";
 import lamda from "../../assets/images/lamda.png";
@@ -56,8 +62,29 @@ const Portfolio = () => {
           </Col>
           <Col xs={6} lg={4}>
             <div className="port_img">
-              <a href="https://taufik9890.github.io/chossy-foddy/index.html" rel="noopener noreferrer" target="_blank">
+              <a href="https://taufik9890.github.io/chossy-foddy/" rel="noopener noreferrer" target="_blank">
                 <Image alt="chossy_foddy" loading="lazy" src={chossy_foddy} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/Jirvana/" rel="noopener noreferrer" target="_blank">
+                <Image alt="jirvana" loading="lazy" src={jirvana} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/gymnasium/" rel="noopener noreferrer" target="_blank">
+                <Image alt="gymnasium" loading="lazy" src={gymnasium} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/innovate/" rel="noopener noreferrer" target="_blank">
+                <Image alt="innovate" loading="lazy" src={innovate} />
               </a>
             </div>
           </Col>
@@ -65,6 +92,27 @@ const Portfolio = () => {
             <div className="port_img">
               <a href="https://taufik9890.github.io/arche/" rel="noopener noreferrer" target="_blank">
                 <Image alt="chossy_foddy" loading="lazy" src={arche} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/ngo/" rel="noopener noreferrer" target="_blank">
+                <Image alt="ngo" loading="lazy" src={ngo} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/qwery/" rel="noopener noreferrer" target="_blank">
+                <Image alt="qwery" loading="lazy" src={qwery} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/agenc/" rel="noopener noreferrer" target="_blank">
+                <Image alt="agenc" loading="lazy" src={agenc} />
               </a>
             </div>
           </Col>
