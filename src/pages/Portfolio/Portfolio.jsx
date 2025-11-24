@@ -9,10 +9,13 @@ import innovate from "../../assets/images/innovate.png";
 import arche from "../../assets/images/arche.png";
 import qwery from "../../assets/images/qwery.png";
 import ngo from "../../assets/images/ngo.png";
+import waxom from "../../assets/images/waxom.png";
 import agenc from "../../assets/images/agenc.png";
 import appon from "../../assets/images/appon.png";
 import hunt from "../../assets/images/hunt.jpg";
+import holmberg from "../../assets/images/holmberg.png";
 import lamda from "../../assets/images/lamda.png";
+import alex from "../../assets/images/alex.png";
 import arf from "../../assets/images/arf.png";
 import panda_commerce from "../../assets/images/panda_commerce.png";
 
@@ -104,8 +107,8 @@ const Portfolio = () => {
           </Col>
           <Col xs={6} lg={4}>
             <div className="port_img">
-              <a href="https://taufik9890.github.io/qwery/" rel="noopener noreferrer" target="_blank">
-                <Image alt="qwery" loading="lazy" src={qwery} />
+              <a href="https://taufik9890.github.io/waxom/" rel="noopener noreferrer" target="_blank">
+                <Image alt="waxom" loading="lazy" src={waxom} />
               </a>
             </div>
           </Col>
@@ -125,6 +128,13 @@ const Portfolio = () => {
           </Col>
           <Col xs={6} lg={4}>
             <div className="port_img">
+              <a href="https://taufik9890.github.io/qwery/" rel="noopener noreferrer" target="_blank">
+                <Image alt="qwery" loading="lazy" src={qwery} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
               <a href="https://taufik9890.github.io/hunt/" rel="noopener noreferrer" target="_blank">
                 <Image alt="hunt" loading="lazy" src={hunt} />
               </a>
@@ -132,8 +142,22 @@ const Portfolio = () => {
           </Col>
           <Col xs={6} lg={4}>
             <div className="port_img">
+              <a href="https://taufik9890.github.io/holmberg/#" rel="noopener noreferrer" target="_blank">
+                <Image alt="holmberg" loading="lazy" src={holmberg} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
               <a href="https://taufik9890.github.io/lamda/#" rel="noopener noreferrer" target="_blank">
                 <Image alt="lamda" loading="lazy" src={lamda} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/alex/" rel="noopener noreferrer" target="_blank">
+                <Image alt="alex" loading="lazy" src={alex} />
               </a>
             </div>
           </Col>
