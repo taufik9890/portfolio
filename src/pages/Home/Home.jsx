@@ -36,7 +36,7 @@ const Home = () => {
                   passionate Full-Stack Web Developer specializing in the MERN
                   stack (MongoDB, Express.js, React, Node.js). I build robust,
                   scalable web applications with clean code, intuitive UI, and
-                  seamless user experiences.
+                  seamless user experiences. Besides Development, I have decent knowledge of market research, data analysis, reporting, and database management for informed decision-making.
                 </p>
                 <div className="btn_design">
                   <Link  className="" to={'/about'}  href="">
