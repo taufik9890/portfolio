@@ -88,11 +88,11 @@ const About = () => {
                     </Col>
                     <div className="btn_design">
                       <a
-                        href="https://drive.google.com/file/d/1mdcX5Y5TxndkoMk2KPRtc3DEG7x_zqus/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/174_zjiRjgknKF1h7hLGvyebQ0u7__G1h/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Download CV <FaDownload />
+                        Download Resume <FaDownload />
                       </a>
                     </div>
                   </Row>
@@ -364,7 +364,7 @@ const About = () => {
                         Web Designer - <span>A.R Family LLC</span>
                       </h4>
                       <p>
-                        I was working as a Front End Developer remotely. I worked on some projects using Bootstrap, Html, Css, jQuery and a little bit of javaScript. I provided my own UI as well and been granted by them after that. I’ve always maintain quality in pixel perfection.
+                        I was working as a Front End Developer remotely. I worked on some projects using Bootstrap, Html, Css, jQuery and a little bit of javaScript. I provided my own UI as well and been granted by them after that. I’ve always maintain quality in pixel perfection. I’ve also worked on data analysis, data collection and research while working in here.
                       </p>
                     </div>
                   </div>
@@ -408,7 +408,7 @@ const About = () => {
                         Developement. I solely developed these apps with my own
                         experience in React Js and React Native. Later I was
                         responsible for maintaining the Back-End and Databases
-                        of several websites from the company.
+                        of several websites from the company.  I also focused on data analysis, research, database management and informed decision making while working in here.
                       </p>
                     </div>
                   </div>
@@ -429,10 +429,10 @@ const About = () => {
                         This has been a long online course for me learning about
                         Basic web designing with Bootstrap, Tailwind, Material
                         UI, then We learned about React Js, Node Js, Express Js,
-                        Mongo DB, Redux, React Native and many more. With major
+                        Mongo DB, Redux, React Native and many more. Also learnt Database management With major
                         projects like chatting application, Full-stack
                         eccomerce(still on production) and Full-stack social
-                        media app(still on production)
+                        media app(still on production),
                       </p>
                     </div>
                   </div>
