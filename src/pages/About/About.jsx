@@ -92,7 +92,7 @@ const About = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Download Resume <FaDownload />
+                        Download CV <FaDownload />
                       </a>
                     </div>
                   </Row>
