@@ -32,11 +32,11 @@ const Home = () => {
                 <h2>Mern Stack Developer</h2>
                 <p>
                   I'm a Bangladeshi based Mern Stack Developer. I've been
-                  working as a Mern Stack Developer for 3 years. I'm a
+                  working as a Mern Stack Developer for 3.5 years. I'm a
                   passionate Full-Stack Web Developer specializing in the MERN
                   stack (MongoDB, Express.js, React, Node.js). I build robust,
                   scalable web applications with clean code, intuitive UI, and
-                  seamless user experiences. Besides Development, I have decent knowledge of market research, data analysis, reporting, and database management for informed decision-making.
+                  seamless user experiences.
                 </p>
                 <div className="btn_design">
                   <Link  className="" to={'/about'}  href="">

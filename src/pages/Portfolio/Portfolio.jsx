@@ -18,6 +18,9 @@ import lamda from "../../assets/images/lamda.png";
 import alex from "../../assets/images/alex.png";
 import arf from "../../assets/images/arf.png";
 import panda_commerce from "../../assets/images/panda_commerce.png";
+import client_site from "../../assets/images/client_site.png";
+import server_site from "../../assets/images/server_site.png";
+import { FaLink } from "react-icons/fa";
 
 const Portfolio = () => {
 
@@ -45,6 +48,42 @@ const Portfolio = () => {
                 my <span>portfolio</span>
               </h1>
               <h2>Works</h2>
+            </div>
+          </Col>
+        </Row>
+        <Row className="portfolio_header_row">
+          <Col xs={12}>
+            <div className="portfolio_header">
+                  <h4>Full Stack E-ccomerce Project</h4>
+            </div>
+          </Col>
+        </Row>
+         <Row className="port_img_row">
+          <Col xs={6} lg={6}>
+            <div className="port_img_full">
+              <a href="https://fullstack-mernian-2204-rxs6.vercel.app/" rel="noopener noreferrer" target="_blank">
+                <Image alt="chossy_foddy" loading="lazy" src={client_site} />
+                <div className="overlay">
+                  <p>Client Side <FaLink /></p>
+                </div>
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={6}>
+            <div className="port_img_full">
+              <a href="https://fullstack-mernian-2204-srha.vercel.app/" rel="noopener noreferrer" target="_blank">
+                <Image alt="chossy_foddy" loading="lazy" src={server_site} />
+                <div className="overlay">
+                  <p>Server Side <FaLink /></p>
+                </div>
+              </a>
+            </div>
+          </Col>
+          </Row>
+          <Row className="portfolio_header_row">
+          <Col xs={12}>
+            <div className="portfolio_header">
+                <h4>Front End Projects</h4>
             </div>
           </Col>
         </Row>

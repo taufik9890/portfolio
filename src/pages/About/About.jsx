@@ -397,7 +397,7 @@ const About = () => {
                       <MdOutlineWorkHistory color="#fff" />
                     </div>
                     <div className="education_texts">
-                      <h5>Nov 2023 - Feb 2025</h5>
+                      <h5>Nov 2023 - Nov 2025</h5>
                       <h4>
                         Web Developer -{" "}
                         <span>CT Health LTD(Birdem, Badass Foundation)</span>
