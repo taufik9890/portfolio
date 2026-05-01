@@ -54,7 +54,7 @@ const Portfolio = () => {
         <Row className="portfolio_header_row">
           <Col xs={12}>
             <div className="portfolio_header">
-                  <h4>Full Stack E-ccomerce Project</h4>
+                  <h4>Full Stack E-comerce Project</h4>
             </div>
           </Col>
         </Row>

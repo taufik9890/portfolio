@@ -88,7 +88,7 @@ const About = () => {
                     </Col>
                     <div className="btn_design">
                       <a
-                        href="https://drive.google.com/file/d/1mbpu25igxfeNjIvdZa5zD6vMv0xQXewX/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1hHMqzuQqIeK7BiyMVHA48A88-x6_39en/view?usp=drive_link"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
