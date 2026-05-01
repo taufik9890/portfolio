@@ -103,7 +103,7 @@ const About = () => {
                   <Col xs={6} className="info_box">
                     <CountUp
                       start={0}
-                      end={3.5}
+                      end={3}
                       duration={3}
                       separator=" "
                       decimal=","
