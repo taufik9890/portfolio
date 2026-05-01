@@ -88,7 +88,7 @@ const About = () => {
                     </Col>
                     <div className="btn_design">
                       <a
-                        href="https://drive.google.com/file/d/1dpo2o0lAvdczchd-XQatzIh9eT8R9jTW/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1mbpu25igxfeNjIvdZa5zD6vMv0xQXewX/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -103,7 +103,7 @@ const About = () => {
                   <Col xs={6} className="info_box">
                     <CountUp
                       start={0}
-                      end={3}
+                      end={3.5}
                       duration={3}
                       separator=" "
                       decimal=","
