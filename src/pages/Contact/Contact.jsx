@@ -84,7 +84,7 @@ const Contact = () => {
                       <FaGithub size={18} color="#fff" />
                     </a>
                     <a
-                      href="https://www.facebook.com/taufik.mahbub.1/"
+                      href="https://www.facebook.com/taufik.rahman.237459"
                       className="contact_icon"
                       rel="noopener noreferrer"
                       target="_blank"
