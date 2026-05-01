@@ -18,8 +18,8 @@ import lamda from "../../assets/images/lamda.png";
 import alex from "../../assets/images/alex.png";
 import arf from "../../assets/images/arf.png";
 import panda_commerce from "../../assets/images/panda_commerce.png";
-import client_site from "../../assets/images/client_site.png";
-import server_site from "../../assets/images/server_site.png";
+import client_side from "../../assets/images/client_side.png";
+import server_side from "../../assets/images/server_side.png";
 import { FaLink } from "react-icons/fa";
 
 const Portfolio = () => {
@@ -59,20 +59,20 @@ const Portfolio = () => {
           </Col>
         </Row>
          <Row className="port_img_row">
-          <Col xs={6} lg={6}>
+          <Col xs={12} lg={6}>
             <div className="port_img_full">
               <a href="https://fullstack-mernian-2204-rxs6.vercel.app/" rel="noopener noreferrer" target="_blank">
-                <Image alt="chossy_foddy" loading="lazy" src={client_site} />
+                <Image alt="client_side" loading="lazy" src={client_side} />
                 <div className="overlay">
                   <p>Client Side <FaLink /></p>
                 </div>
               </a>
             </div>
           </Col>
-          <Col xs={6} lg={6}>
+          <Col xs={12} lg={6}>
             <div className="port_img_full">
               <a href="https://fullstack-mernian-2204-srha.vercel.app/" rel="noopener noreferrer" target="_blank">
-                <Image alt="chossy_foddy" loading="lazy" src={server_site} />
+                <Image alt="server_side" loading="lazy" src={server_side} />
                 <div className="overlay">
                   <p>Server Side <FaLink /></p>
                 </div>
@@ -111,13 +111,6 @@ const Portfolio = () => {
           </Col>
           <Col xs={6} lg={4}>
             <div className="port_img">
-              <a href="https://taufik9890.github.io/Jirvana/" rel="noopener noreferrer" target="_blank">
-                <Image alt="jirvana" loading="lazy" src={jirvana} />
-              </a>
-            </div>
-          </Col>
-          <Col xs={6} lg={4}>
-            <div className="port_img">
               <a href="https://taufik9890.github.io/gymnasium/" rel="noopener noreferrer" target="_blank">
                 <Image alt="gymnasium" loading="lazy" src={gymnasium} />
               </a>
@@ -134,6 +127,13 @@ const Portfolio = () => {
             <div className="port_img">
               <a href="https://taufik9890.github.io/arche/" rel="noopener noreferrer" target="_blank">
                 <Image alt="chossy_foddy" loading="lazy" src={arche} />
+              </a>
+            </div>
+          </Col>
+          <Col xs={6} lg={4}>
+            <div className="port_img">
+              <a href="https://taufik9890.github.io/Jirvana/" rel="noopener noreferrer" target="_blank">
+                <Image alt="jirvana" loading="lazy" src={jirvana} />
               </a>
             </div>
           </Col>
